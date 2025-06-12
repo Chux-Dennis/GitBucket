@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/gitbucket-logo.png" alt="GitBucket Logo" width="200"/>
+  <img src="./src/public/logo.png" alt="GitBucket Logo" width="200"/>
 </p>
 
 # 🪣 GitBucket — Use GitHub as an Image Storage Bucket
