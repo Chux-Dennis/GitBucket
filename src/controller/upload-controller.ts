@@ -9,7 +9,7 @@ export const uploadController = async (req: Request, res: Response): Promise<any
     const { originalname, buffer } = req.file;
     const base64Content = buffer.toString("base64");
     const fileName = `${Date.now()}-${originalname}`;
-    const githubPath = `uploads/${fileName}`
+    const githubPath = `${process.env.FOLDER_NAME}/${fileName}`
 
     const url = `https://api.github.com/repos/${process.env.GITHUB_USERNAME}/${process.env.REPO_NAME}/contents/${githubPath}`;
 
